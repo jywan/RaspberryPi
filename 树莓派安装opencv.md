@@ -26,5 +26,24 @@ sudo make install
 安心睡觉，让树莓派慢慢编译吧。第二天一早起来，执行`sudo make install`安装完成。
 ![](./pictures/opencv_install_sucess.jpeg)
 
+*******
+#### 利用flask通过opencv读取树莓派摄像头
+[资料参考](https://www.cnblogs.com/arkenstone/p/7159615.html)
+multipart视频流的结构如下：
+```
+HTTP/1.1 200 OK
+Content-Type: multipart/x-mixed-replace; boundary=frame
+
+--frame
+Content-Type: image/jpeg
+
+<jpeg data here>
+--frame
+Content-Type: image/jpeg
+
+<jpeg data here>
+...
+```
+
 
 
